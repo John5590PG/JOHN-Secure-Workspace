@@ -1,0 +1,34 @@
+# =========================
+# JOHN SECURE WORKSPACE
+# Aturan Pengecualian Git (V6.5)
+# =========================
+
+# 1. Basis Data & Aset Terklasifikasi
+database/
+database/john_server.db
+*.db
+*.sqlite3
+
+# 2. Lingkungan Virtual (Virtual Environments)
+venv/
+.venv/
+env/
+
+# 3. Python Cache & Hasil Kompilasi
+__pycache__/
+*.pyc
+*.pyo
+
+# 4. Kredensial Lingkungan & Konfigurasi Rahasia
+.env
+.streamlit/secrets.toml
+
+# 5. Sampah Sistem Operasi lokal (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# 6. Skrip Simulasi & Pengujian Internal (MENCEGAH KEBOCORAN API KEY!)
+program_pabrik_percobaan.py
+timeline_pabrik.py
+*_percobaan.py
+test_*.py
